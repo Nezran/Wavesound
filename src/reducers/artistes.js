@@ -11,7 +11,6 @@ const artistes = (state = {
                 isFetching: true
             })
         case 'RESET_ARTISTS':
-            console.log("reset")
             return state = {
                 isFetching: false,
                 items: []

@@ -9,15 +9,12 @@ import store from './store/store'
 
 
 const Theme = () => (
-
     <MuiThemeProvider>
         <Provider store={store}>
             <App />
         </Provider>
     </MuiThemeProvider>
-
 );
 
 ReactDOM.render(<Theme />, document.getElementById('root'));
-
 registerServiceWorker();

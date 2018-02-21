@@ -5,13 +5,10 @@ const params = (state = {string:'',cat:'artist'}, action) => {
     switch (action.type){
         case 'QUERY_SEARCH':
 
-            /*query.searchArtists(action.string,state.cat).then((res) => {
-                console.log(res);
-            });*/
-
             return {string:action.string,cat:state.cat}
 
         case 'TYPE_SEARCH':
+            // action dont used
 
             query.searchArtists(state.string,action.cat).then((res) => {
                 console.log(res);

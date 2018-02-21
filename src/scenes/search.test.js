@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 
 
-test('Link changes the class when hovered', () => {
+test('Generate component Search', () => {
     const component = renderer.create(
         <search/>,
     );
@@ -19,10 +19,5 @@ test('Link changes the class when hovered', () => {
     );
     let treeProps = componentProps.toJSON();
     expect(treeProps).toMatchSnapshot();
-
-
-
-
-
 
 });

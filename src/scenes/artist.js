@@ -51,7 +51,6 @@ class Artist extends React.Component{
 
     componentWillMount() {
         let id = this.props.match.params.id;
-
         this.props.actions.fetchArtist(id)
         this.props.actions.fetchArtistAlbums(id)
         this.onChangeSelect = this.onChangeSelect.bind(this);
@@ -60,15 +59,12 @@ class Artist extends React.Component{
     onChangeSelect(event){
         console.log(event.target.value)
         this.props.actions.fetchArtistAlbums(this.props.match.params.id,event.target.value)
-
     }
 
-        render(){
+    render(){
 
         const artist = this.props.state.artist.artist;
         const albums = this.props.state.artist.albums;
-
-
 
         return(
             <div style={{width:'100%',float:'left'}}>
@@ -85,13 +81,10 @@ class Artist extends React.Component{
                                 backgroundColor="#a4c639"
                             />
                             <div style={styles.wrapper}>
-
                                 {
                                     artist.genres.map((genre) => <Chip style={styles.chip} key={genre} >{genre}</Chip>)
                                 }
-
                                 <div style={styles.sep}></div>
-
                                 <div style={styles.root}>
                                     <h3>
                                         <Badge
@@ -144,9 +137,6 @@ class Artist extends React.Component{
                                                 title={album.name}
                                                 subtitle={<span>Paru le <b>{moment(album.release_date).format("DD MMMM YYYY")}</b></span>}
                                             >
-                                                {console.log(album)}
-
-
                                                 <img src={album.images[0].url} alt={'couverture album'} />
                                             </GridTile>
                                         ))}

@@ -3,25 +3,12 @@ import TextField from 'material-ui/TextField';
 import { connect } from 'react-redux'
 import * as actions from '../actions/index'
 import { bindActionCreators } from 'redux'
-
 import CircularProgress from 'material-ui/CircularProgress';
-
-/*const styles = {
-    block: {
-        maxWidth: 250,
-    },
-    radioButton: {
-        marginBottom: 16,
-        float:'left'
-    },
-};*/
 
 class Search extends React.Component{
 
     constructor(props){
         super(props)
-
-        console.log(this.props)
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSelect = this.handleSelect.bind(this);
@@ -29,20 +16,11 @@ class Search extends React.Component{
     }
 
     handleChange(event){
-
-       // this.props.actions.stringSearch(event.target.value)
-        //actions.stringSearch(event.target.value,'artist')
         this.props.actions.stringSearch(event.target.value)
-        /*ici middleware */
-
     }
 
     handleSelect(event){
-
-        //actions.typeSearch(event.target.value)
         this.props.actions.typeSearch(event.target.value)
-
-        /*ici middleware */
     }
 
     render(){
@@ -73,7 +51,6 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 Search = connect(mapStateToProps, mapDispatchToProps)(Search)
-
 
 export default Search
 

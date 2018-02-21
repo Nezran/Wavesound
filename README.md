@@ -47,8 +47,8 @@ npm start
 
 Actuellement 2 tests
 
-Test d'un reducer (src/reducers/artistes.test.js)
-Snapshot test de la vue search (src/scenes/search.js)
+- Test d'un reducer (src/reducers/artistes.test.js)
+- Snapshot test de la vue search (src/scenes/search.js)
 
 ```
 npm test

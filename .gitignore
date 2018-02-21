@@ -7,7 +7,7 @@
 /coverage
 
 # dev
-.idea
+/.idea
 
 # production
 /build

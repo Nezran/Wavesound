@@ -7,6 +7,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Provider } from "react-redux";
 import store from './store/store'
 
+console.log("Console de dev, pas de folie ici ! =D ")
 
 const Theme = () => (
     <MuiThemeProvider>

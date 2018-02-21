@@ -16,7 +16,7 @@ const Buttons = () => {
 const user = () => {
     const now = moment();
     const endDate = moment(sessionStorage.getItem('expire_at'));
-    const token = moment(sessionStorage.getItem('access_token'));
+    const token = sessionStorage.getItem('access_token');
 
     return(
         <div>

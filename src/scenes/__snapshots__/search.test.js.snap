@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the class when hovered 1`] = `<search />`;
+
+exports[`Link changes the class when hovered 2`] = `<search />`;
+
+exports[`Link changes the class when hovered 3`] = `
+<search
+  state={
+    Object {
+      "artistes": Object {
+        "isFetching": true,
+      },
+    }
+  }
+/>
+`;

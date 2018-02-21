@@ -1,5 +1,7 @@
 # Application d'exemple qui permet de rechercher un artiste et afficher son profil depuis l'API Spotify
 
+**React - Redux - Axios - Material-ui**
+
 Réalisé en février 2018
 
 ## Installation

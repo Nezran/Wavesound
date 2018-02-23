@@ -22,7 +22,7 @@ class App extends Component {
             <p className="App-title">Application d'exemple qui permet de rechercher un artiste et afficher son profil depuis l'API Spotify </p>
             <p>React - Redux - Rest API</p>
         </header>
-          { token == null || endDate == null || now.isBefore(endDate) ?
+          { token != null && endDate != null && now.isBefore(endDate) ?
               (
                   <div>
                       <Search/>

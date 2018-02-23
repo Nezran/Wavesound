@@ -20,7 +20,9 @@ const user = () => {
 
     return(
         <div>
-            { token == null || endDate == null || now.isBefore(endDate) ?
+            {console.log(now.isBefore(endDate))}
+
+            { token != null && endDate != null && now.isBefore(endDate) ?
                 (
                     <p>
                         Expire dans :
